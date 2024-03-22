@@ -4,14 +4,14 @@ using Zteam.Models;
 
 namespace Zteam.Controllers
 {
-    public class libraryController : Controller
+    public class LibraryController : Controller
     {
         private readonly ApplicationDbContext _db;
-        public libraryController(ApplicationDbContext db)
+        public LibraryController(ApplicationDbContext db)
         {
             _db = db;
         }
-        public IActionResult Index()
+        public IActionResult AllGame()
         {
             IEnumerable<Game> game = _db.Game;
             return View(game);
