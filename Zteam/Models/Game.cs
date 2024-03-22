@@ -21,7 +21,6 @@ namespace Zteam.Models
 
         public List<Genre>? Genre { get; set; }
         public Developer Developer { get; set; }
-        public Publisher Publisher { get; set; }
 
     }
 }
