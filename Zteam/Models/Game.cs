@@ -15,13 +15,11 @@ namespace Zteam.Models
         public float Price { get; set; }
         public byte[]? GameImage { get; set; }
         public int DeveloperId { get; set; }
-        public int PublisherId { get; set; }
         public DateTime ReleaseDate { get; set; }
         public string Rating { get; set; }
 
         public List<Genre>? Genre { get; set; }
         public Developer Developer { get; set; }
-        public Publisher Publisher { get; set; }
 
     }
 }
